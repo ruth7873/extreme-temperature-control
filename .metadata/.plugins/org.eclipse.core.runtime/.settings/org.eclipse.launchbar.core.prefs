@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:final_project_sensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:new-project,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:real time sensors project Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:sensors-project,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RealTimeProject Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:new-sensors Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ultrasonic-sensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:empty-project Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:extreme-temperature-control Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RealTimeProject\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RealTimeProject\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:extreme-temperature-control\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:new-project/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:new-project/activeLaunchTarget=null\:---

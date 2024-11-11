@@ -1,0 +1,2 @@
+D
+HAL_GPIO_ReadPin(ECHO_PORT, ECHO_PIN)

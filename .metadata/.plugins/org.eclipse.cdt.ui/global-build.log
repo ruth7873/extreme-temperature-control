@@ -1,0 +1,71 @@
+20:03:16 **** Incremental Build of configuration Debug for project extreme-temperature-control ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/temperature-sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/temperature-sensor.d" -MT"Core/Src/temperature-sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/temperature-sensor.o"
+In file included from ../Core/Src/temperature-sensor.c:9:
+../Core/Inc/temperature-sensor.h:19:14: warning: 'Temperature' defined but not used [-Wunused-variable]
+   19 | static float Temperature;
+      |              ^~~~~~~~~~~
+arm-none-eabi-gcc -o "extreme-temperature-control.elf" @"objects.list"   -mcpu=cortex-m3 -T"Y:\teachers for hitmachut\RealTime\group1\zipiandruth\project\extreme-temperature-control\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="extreme-temperature-control.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: extreme-temperature-control.elf
+ 
+arm-none-eabi-size  extreme-temperature-control.elf 
+arm-none-eabi-objdump -h -S extreme-temperature-control.elf  > "extreme-temperature-control.list"
+   text	   data	    bss	    dec	    hex	filename
+  18356	    100	   3340	  21796	   5524	extreme-temperature-control.elf
+Finished building: default.size.stdout
+ 
+Finished building: extreme-temperature-control.list
+ 
+20:03:43 **** Incremental Build of configuration Debug for project extreme-temperature-control ****
+make -j12 all 
+arm-none-eabi-size  extreme-temperature-control.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18356	    100	   3340	  21796	   5524	extreme-temperature-control.elf
+Finished building: default.size.stdout
+ 
+20:06:48 **** Incremental Build of configuration Debug for project extreme-temperature-control ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:109:1: warning: implicit declaration of function 'init_distance_sensor' [-Wimplicit-function-declaration]
+  109 | init_distance_sensor(&htim2);
+      | ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:110:1: warning: implicit declaration of function 'init_temperature_sensor' [-Wimplicit-function-declaration]
+  110 | init_temperature_sensor(&hadc);
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:153:22: warning: implicit declaration of function 'read_distance' [-Wimplicit-function-declaration]
+  153 |         int distance=read_distance(&htim2);
+      |                      ^~~~~~~~~~~~~
+../Core/Src/main.c:155:9: warning: implicit declaration of function 'led_on' [-Wimplicit-function-declaration]
+  155 |         led_on();
+      |         ^~~~~~
+../Core/Src/main.c:174:27: warning: implicit declaration of function 'read_temperature' [-Wimplicit-function-declaration]
+  174 |         int temperature = read_temperature(&hadc);
+      |                           ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:13: warning: unused variable 'temperature' [-Wunused-variable]
+  174 |         int temperature = read_temperature(&hadc);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:159:13: warning: unused variable 'x' [-Wunused-variable]
+  159 |         int x=1000;
+      |             ^
+../Core/Src/main.c:153:13: warning: unused variable 'distance' [-Wunused-variable]
+  153 |         int distance=read_distance(&htim2);
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "extreme-temperature-control.elf" @"objects.list"   -mcpu=cortex-m3 -T"Y:\teachers for hitmachut\RealTime\group1\zipiandruth\project\extreme-temperature-control\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="extreme-temperature-control.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: extreme-temperature-control.elf
+ 
+arm-none-eabi-size  extreme-temperature-control.elf 
+arm-none-eabi-objdump -h -S extreme-temperature-control.elf  > "extreme-temperature-control.list"
+   text	   data	    bss	    dec	    hex	filename
+  17860	    100	   3340	  21300	   5334	extreme-temperature-control.elf
+Finished building: default.size.stdout
+ 
+Finished building: extreme-temperature-control.list
+ 
+20:08:42 **** Incremental Build of configuration Debug for project extreme-temperature-control ****
+make -j12 all 
+arm-none-eabi-size  extreme-temperature-control.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17860	    100	   3340	  21300	   5334	extreme-temperature-control.elf
+Finished building: default.size.stdout
+ 

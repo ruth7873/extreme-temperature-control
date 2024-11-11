@@ -1,0 +1,10 @@
+20:08:42 **** Incremental Build of configuration Debug for project extreme-temperature-control ****
+make -j12 all 
+arm-none-eabi-size  extreme-temperature-control.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17860	    100	   3340	  21300	   5334	extreme-temperature-control.elf
+Finished building: default.size.stdout
+ 
+
+20:08:43 Build Finished. 0 errors, 0 warnings. (took 1s.399ms)
+

@@ -1,0 +1,5 @@
+../Core/Src/task-manager.c:12:6:create_tasks	16	static
+../Core/Src/task-manager.c:18:6:create_read_distance_task	24	static
+../Core/Src/task-manager.c:21:6:create_measure_temperature_task	24	static
+../Core/Src/task-manager.c:24:6:create_alarm_task	16	static
+../Core/Src/task-manager.c:27:6:create_led_operate	16	static

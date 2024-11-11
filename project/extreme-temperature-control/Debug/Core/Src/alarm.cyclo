@@ -1,0 +1,3 @@
+../Core/Src/alarm.c:11:10:init_alarm	1
+../Core/Src/alarm.c:15:6:alarm_temperature	4
+../Core/Src/alarm.c:36:6:task_alarm	1

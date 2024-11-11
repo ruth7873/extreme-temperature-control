@@ -1,0 +1,3 @@
+../Core/Src/temperature-sensor.c:13:10:init_temperature_sensor	16	static
+../Core/Src/temperature-sensor.c:17:5:read_temperature	16	static
+../Core/Src/temperature-sensor.c:22:6:task_measure_temperature	24	static

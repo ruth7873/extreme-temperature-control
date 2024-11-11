@@ -1,0 +1,33 @@
+/*
+ * led.c
+ *
+ *  Created on: May 28, 2024
+ *      Author: hitmachut
+ */
+
+#include "led.h"
+
+
+void init_led(void){
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0 , GPIO_PIN_RESET);
+}
+void led_on(void){
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0 , GPIO_PIN_SET);
+}
+void led_off(void){
+	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0 , GPIO_PIN_RESET);
+}
+void blink(uint32_t frequency){
+	while(1){
+		led_on();
+		HAL_Delay(frequency);
+		led_off();
+		HAL_Delay(frequency);
+	}
+}
+void led_pwm(uint16_t pulseWidth){
+
+}
+
+
+
